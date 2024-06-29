@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+import { Amplify } from 'aws-amplify';
+import config from '../amplifyconfiguration.json';
+Amplify.configure(config);
+
 @Component({
   selector: 'app-root',
   standalone: true,
